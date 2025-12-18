@@ -291,7 +291,7 @@
 
 
             if (targetState === 'TREE') {
-                group.rotation.y += 0.008;
+                group.rotation.y += 0.01;
 
                 if(isBlinking) {
 
@@ -303,9 +303,9 @@
             } else {
                 group.scale.set(1,1,1);
 
-                const autoRotate = 0.005;
+                const autoRotate = 0.05;
                 const targetRotY = handRotY + autoRotate;
-                group.rotation.y += (targetRotY - group.rotation.y) * 0.05;
+                group.rotation.y += (targetRotY - group.rotation.y) * 0.15;
             }
         }
 
