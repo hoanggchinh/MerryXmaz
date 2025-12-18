@@ -291,11 +291,11 @@
 
 
             if (targetState === 'TREE') {
-                group.rotation.y += 0.15;
+                group.rotation.y += 0.008;
 
                 if(isBlinking) {
 
-                    const scale = 1 + Math.sin(time * 5) * 0.2;
+                    const scale = 1 + Math.sin(time * 5) * 0.5;
                     group.scale.set(scale, scale, scale);
                 } else {
                     group.scale.set(1,1,1);
